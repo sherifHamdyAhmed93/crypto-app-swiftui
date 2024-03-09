@@ -18,6 +18,7 @@
 		FA8932C02B9BF55F00373D92 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8932BF2B9BF55F00373D92 /* PreviewProvider.swift */; };
 		FA8932C22B9BF70900373D92 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8932C12B9BF70900373D92 /* Double.swift */; };
 		FA8932C42B9BFA1200373D92 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8932C32B9BFA1200373D92 /* CoinRowView.swift */; };
+		FAB4A4672B9D1D2F004366F3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4A4662B9D1D2F004366F3 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		FA8932BF2B9BF55F00373D92 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		FA8932C12B9BF70900373D92 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		FA8932C32B9BFA1200373D92 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
+		FAB4A4662B9D1D2F004366F3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		FA82810F2B93CCE500C0C5E2 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				FAB4A4662B9D1D2F004366F3 /* HomeViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				FA8932C42B9BFA1200373D92 /* CoinRowView.swift in Sources */,
 				FA8281132B93CD0D00C0C5E2 /* CircleButtonView.swift in Sources */,
 				FA8932BE2B9BEDE400373D92 /* BaseClass.swift in Sources */,
+				FAB4A4672B9D1D2F004366F3 /* HomeViewModel.swift in Sources */,
 				FA8932C22B9BF70900373D92 /* Double.swift in Sources */,
 				FA8281152B93CD2E00C0C5E2 /* HomeView.swift in Sources */,
 				FA8281172B93EBFD00C0C5E2 /* CircleButtonAnimationView.swift in Sources */,
