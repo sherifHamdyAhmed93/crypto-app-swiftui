@@ -38,6 +38,8 @@ struct CoinModel: Codable,Identifiable {
         case athChangePercentage = "ath_change_percentage"
         case athDate = "ath_date"
         case symbol
+        case sparklineIn7d = "sparkline_in_7d"
+
     }
     
     var id,symbol,name: String
@@ -45,18 +47,18 @@ struct CoinModel: Codable,Identifiable {
     var currentPrice: Double
     
     var atlDate: String?
-    var totalSupply: Int?
+    var totalSupply: Double?
     var low24h: Double?
     var fullyDilutedValuation: Int?
     var lastUpdated: String?
-    var circulatingSupply: Int?
-    var maxSupply: Int?
+    var circulatingSupply: Double?
+    var maxSupply: Double?
     var totalVolume: Int?
     var marketCap: Int?
     var priceChangePercentage24h: Double?
     var atlChangePercentage: Double?
     var marketCapChangePercentage24h: Double?
-    var marketCapChange24h: Int?
+    var marketCapChange24h: Double?
     var atl: Double?
     var marketCapRank: Int?
     var priceChange24h: Double?
@@ -64,7 +66,8 @@ struct CoinModel: Codable,Identifiable {
     var ath: Double?
     var athChangePercentage: Float?
     var athDate: String?
-    
+    var sparklineIn7d: SparklineIn7d?
+
     var currentHoldings:Double?
     
     func updateHoldings(amount:Double)->CoinModel{
@@ -81,4 +84,21 @@ struct CoinModel: Codable,Identifiable {
     
     
     
+}
+
+struct SparklineIn7d: Codable {
+
+  enum CodingKeys: String, CodingKey {
+    case price
+  }
+
+  var price: [Float]?
+
+
+
+  init(from decoder: Decoder) throws {
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+    price = try container.decodeIfPresent([Float].self, forKey: .price)
+  }
+
 }

@@ -11,12 +11,21 @@ import Combine
 class HomeViewModel:ObservableObject{
     @Published var allCoins:[CoinModel] = []
     @Published var protfolioCoins:[CoinModel] = []
+    
+    private var dataService = CoinDataService()
+    
+    private var cancenables = Set<AnyCancellable>()
 
     init(){
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
-            self.allCoins.append(DeveloperModel.instance.coin)
-            self.protfolioCoins.append(DeveloperModel.instance.coin)
-        })
+       addAllCoinsSubscription()
+    }
+    
+    func addAllCoinsSubscription(){
+        dataService.$allCoins
+            .sink { [weak self] coins in
+                self?.allCoins = coins
+            }
+            .store(in: &cancenables)
     }
     
 }

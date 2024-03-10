@@ -18,7 +18,7 @@ extension Double{
         formatter.numberStyle = .currency
         formatter.alwaysShowsDecimalSeparator  = true
         formatter.currencyCode = "USD"
-        formatter.locale = .current
+//        formatter.locale = .current
         formatter.minimumFractionDigits = 2
         formatter.maximumFractionDigits =  2
         formatter.currencySymbol = "$"
@@ -43,7 +43,7 @@ extension Double{
         formatter.numberStyle = .currency
         formatter.alwaysShowsDecimalSeparator  = true
         formatter.currencyCode = "USD"
-        formatter.locale = .current
+//        formatter.locale = .current
         formatter.minimumFractionDigits = 2
         formatter.maximumFractionDigits =  6
         formatter.currencySymbol = "$"
