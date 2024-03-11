@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA5729432B9EB75300AE213C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5729422B9EB75300AE213C /* NetworkManager.swift */; };
 		FA8280FA2B938DA400C0C5E2 /* Crypto_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8280F92B938DA400C0C5E2 /* Crypto_appApp.swift */; };
 		FA8281012B938DA600C0C5E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8281002B938DA600C0C5E2 /* Preview Assets.xcassets */; };
 		FA8281082B938DDB00C0C5E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8281072B938DDB00C0C5E2 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA5729422B9EB75300AE213C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FA8280F62B938DA400C0C5E2 /* Crypto-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8280F92B938DA400C0C5E2 /* Crypto_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto_appApp.swift; sourceTree = "<group>"; };
 		FA8281002B938DA600C0C5E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA5729412B9EB72800AE213C /* utillities */ = {
+			isa = PBXGroup;
+			children = (
+				FA5729422B9EB75300AE213C /* NetworkManager.swift */,
+			);
+			path = utillities;
+			sourceTree = "<group>";
+		};
 		FA8280ED2B938DA300C0C5E2 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				FA8280F92B938DA400C0C5E2 /* Crypto_appApp.swift */,
+				FA5729412B9EB72800AE213C /* utillities */,
 				FA8932BA2B9BEDA800373D92 /* Model */,
 				FAB4A4682B9D2BBB004366F3 /* Service */,
 				FA8281092B938DF300C0C5E2 /* Extensions */,
@@ -236,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5729432B9EB75300AE213C /* NetworkManager.swift in Sources */,
 				FA8932C42B9BFA1200373D92 /* CoinRowView.swift in Sources */,
 				FA8281132B93CD0D00C0C5E2 /* CircleButtonView.swift in Sources */,
 				FA8932BE2B9BEDE400373D92 /* CoinModel.swift in Sources */,
